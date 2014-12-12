@@ -1,0 +1,18 @@
+Source: petname
+Section: admin
+Priority: optional
+Maintainer: Dustin Kirkland <kirkland@ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.4
+Homepage: http://launchpad.net/petname
+
+Package: petname
+Architecture: all
+Depends: ${misc:Depends}
+Description: generate pronouncable, perhaps even memorable, pet names
+ This utility will generate "pet names", consisting of a random
+ combination of an adverb, adjective, and proper name.  These are
+ useful for unique hostnames, for instance.
+ The default packaging contains about 2000 names, 1300 adjectives,
+ and 4000 adverbs, yielding nearly 10 billion unique combinations,
+ covering over 32 bits of unique namespace.

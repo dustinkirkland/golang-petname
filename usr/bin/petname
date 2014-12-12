@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo $(sort -R adverbs.txt | head -n1)-$(sort -R adjectives.txt | head -n1)-$(sort -R names.txt | head -n1)

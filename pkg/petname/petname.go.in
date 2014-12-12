@@ -1,0 +1,41 @@
+package petname
+
+import (
+//	"fmt"
+	"math/rand"
+	"strings"
+	"time"
+)
+
+var (
+	adverbs = [...]string{__adverbs.txt__}
+	adjectives = [...]string{__adjectives.txt__}
+	names = [...]string{__names.txt__}
+)
+
+func RandAdverb() string {
+	return adverbs[rand.Intn(len(adverbs))]
+}
+
+func RandAdjective() string {
+	return adjectives[rand.Intn(len(adjectives))]
+}
+
+func RandName() string {
+	return names[rand.Intn(len(names))]
+}
+
+func PetName(words int, separator string) string {
+	rand.Seed(time.Now().UnixNano())
+	if words == 1 {
+		return RandName()
+	} else if words == 2 {
+		return strings.Join([]string{RandAdjective(), RandName()}, separator)
+	}
+	var petname []string
+	for i:=0; i<words-2; i++ {
+		petname = append(petname, RandAdverb())
+	}
+	petname = append(petname, RandAdjective(), RandName())
+	return strings.Join(petname, separator)
+}
