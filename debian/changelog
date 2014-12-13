@@ -20,5 +20,11 @@ petname (1.0) unreleased; urgency=medium
     - add Apache2 license headers
     - add a standalone go binary that uses the library
     - build
+  * debian/control, debian/golang-petname-dev.install, debian/install =>
+    debian/petname.install, debian/rules, Makefile,
+    src/petname_cmd/Makefile, src/petname/Makefile:
+    - create a golang dev library for petname
+    - create a standalone go binary for petname
+    - adjust build process
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 09 Dec 2014 17:40:31 -0600
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600

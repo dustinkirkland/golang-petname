@@ -1,0 +1,2 @@
+src/petname/petname.go /usr/lib/go/src/pkg/petname
+src//petname/petname_test.go /usr/lib/go/src/pkg/petname

@@ -9,9 +9,8 @@ update:
 	./update.sh
 
 petname: petname.go
-	$(GO_BUILD) -o petname.a petname.go
-	GOPATH=$(PWD)/../../ $(GO_INSTALL) petname
-#	GOPATH=$(GOPATH):$(PWD) $(GO_BUILD) -o petname petname_cmd.go
+	$(GO_BUILD) petname.go
+	GOPATH=$(shell pwd)/../../ $(GO_INSTALL) petname
 
 test: petname.go petname_test.go
 	$(GO_TEST)

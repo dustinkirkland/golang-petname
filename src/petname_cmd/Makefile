@@ -6,7 +6,7 @@ GO_CLEAN=go clean
 all: petname
 
 petname: petname_cmd.go
-	GOPATH=$(PWD)/../../ $(GO_BUILD) -o petname petname_cmd.go
+	GOPATH=$(shell pwd)/../../ $(GO_BUILD) -o petname petname_cmd.go
 
 clean:
 	$(RM) petname
