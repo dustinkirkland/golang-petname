@@ -26,5 +26,7 @@ petname (1.0) unreleased; urgency=medium
     - create a golang dev library for petname
     - create a standalone go binary for petname
     - adjust build process
+  * src/petname_cmd/petname_cmd.go:
+    - support --words and --separator flags on command line
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600

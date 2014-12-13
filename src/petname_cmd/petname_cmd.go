@@ -20,10 +20,17 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"petname"
 )
 
+var (
+	words = flag.Int("words", 2, "The number of words in the pet name")
+	separator = flag.String("separator", "-", "The separator between words in the pet name")
+)
+
 func main() {
-	fmt.Println(petname.PetName(2, "-"))
+	flag.Parse()
+	fmt.Println(petname.PetName(*words, *separator))
 }
