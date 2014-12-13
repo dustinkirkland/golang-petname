@@ -1,5 +1,5 @@
 /*
-  petname: test of library for generating human-readable, random names
+  petname: binary for generating human-readable, random names
            for objects (e.g. hostnames, containers, blobs)
 
   Copyright 2014 Dustin Kirkland <dustin.kirkland@gmail.com>
@@ -17,18 +17,13 @@
   limitations under the License.
 */
 
-package petname
+package main
 
 import (
-	"testing"
+	"fmt"
+	"petname"
 )
 
-// Make sure the generated names exist
-func TestPetName(t *testing.T) {
-	for i:=0; i<10; i++ {
-		name := PetName(i, "-")
-		if name == nil {
-			t.Fatalf("Did not generate a %d-word name, '%s'", i, name)
-		}
-	}
+func main() {
+	fmt.Println(petname.PetName(2, "-"))
 }

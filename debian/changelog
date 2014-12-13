@@ -14,5 +14,11 @@ petname (1.0) unreleased; urgency=medium
     src/petname/petname_test.go:
     - add a basic test case
     - add a basic Makefile
+  * === added directory src/petname_cmd, src/petname_cmd/Makefile,
+    src/petname_cmd/petname_cmd.go, src/petname/Makefile,
+    src/petname/petname.go.in, src/petname/petname_test.go:
+    - add Apache2 license headers
+    - add a standalone go binary that uses the library
+    - build
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 09 Dec 2014 17:40:31 -0600
