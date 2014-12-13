@@ -9,5 +9,10 @@ petname (1.0) unreleased; urgency=medium
     etc/petname/adverbs.txt, etc/petname/names.txt,
     pkg/petname/petname.go.in, pkg/petname/update.sh, usr/bin/petname:
     - initial build of the petname project
+  * === added directory src, === removed directory pkg, === renamed
+    directory pkg/petname => src/petname, src/petname/Makefile,
+    src/petname/petname_test.go:
+    - add a basic test case
+    - add a basic Makefile
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 09 Dec 2014 17:40:31 -0600
