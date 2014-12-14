@@ -81,7 +81,8 @@ petname (1.0) unreleased; urgency=medium
     - fix installs
   * petname.go, README.md, setup.py:
     - add a readme, and a python package setup
-  * adverbs.txt:
+  * adjectives.txt, adverbs.txt:
+    - fix capitlization, prune one line
     - prune hyphenated words
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
