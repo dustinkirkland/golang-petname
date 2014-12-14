@@ -36,5 +36,11 @@ petname (1.0) unreleased; urgency=medium
     src/petname/__init__.py, src/petname/Makefile,
     src/petname/petname.py.in, src/petname/update.sh:
     - add a python library, too
+  * === added directory github.com, === added directory
+    github.com/petname, github.com/petname/petname/update.sh, ===
+    removed directory src, === renamed directory src/petname_cmd =>
+    github.com/petname/petname_cmd, === renamed directory src/petname =>
+    github.com/petname/petname:
+    - reorg the dir structure for better golang packaging
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
