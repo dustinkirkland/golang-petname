@@ -10,7 +10,7 @@ update:
 
 petname: petname.go cmd/petname/main.go
 	$(GO_BUILD)
-	GOPATH=$(shell pwd) $(GO_BUILD) -o petname cmd/petname/main.go
+	GOPATH=$(shell pwd) $(GO_BUILD) -o cmd/petname/petname cmd/petname/main.go
 
 test: petname.go petname_test.go
 	GOPATH=$(shell pwd) $(GO_TEST)

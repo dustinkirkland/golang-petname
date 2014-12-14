@@ -1,4 +1,4 @@
-petname usr/bin
+cmd/petname/petname usr/bin
 adverbs.txt usr/lib/petname/
 adjectives.txt usr/lib/petname/
 names.txt usr/lib/petname/
