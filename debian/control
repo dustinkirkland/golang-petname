@@ -1,4 +1,4 @@
-Source: petname
+Source: golang-petname
 Section: admin
 Priority: optional
 Maintainer: Dustin Kirkland <kirkland@ubuntu.com>

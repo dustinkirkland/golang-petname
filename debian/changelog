@@ -4,6 +4,6 @@ petname (1.0) unreleased; urgency=medium
     petname.install, __init__.py, Makefile, names.txt, petname.go.in,
     petname/petname.py, petname/petname.py.in, === removed directory
     petname, setup.py, update.sh:
-    - rework to a golang only package
+    - rework to a golang only package, rename accordingly
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
