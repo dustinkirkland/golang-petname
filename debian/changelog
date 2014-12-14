@@ -77,5 +77,7 @@ petname (1.0) unreleased; urgency=medium
     - fix symlink;  will have version during debuild
   * petname_test.go:
     - fix test syntax
+  * debian/petname.install, debian/python-petname.install:
+    - fix installs
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
