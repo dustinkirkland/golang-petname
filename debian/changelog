@@ -67,5 +67,10 @@ petname (1.0) unreleased; urgency=medium
     - waddayaknow, #go-nuts suggests more changes
   * debian/golang-petname-dev.install:
     - update some paths
+  * === added directory src, === added directory src/github.com, ===
+    added directory src/github.com/dustinkirkland, === added symlink
+    src/github.com/dustinkirkland/petname, cmd/petname/main.go,
+    Makefile, === target is u../../../../petname:
+    - asthetics aside, get the build actually working
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600

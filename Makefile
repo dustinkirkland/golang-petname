@@ -8,14 +8,14 @@ all: update petname
 update:
 	./update.sh
 
-petname: petname.go
+petname: petname.go cmd/petname/main.go
 	$(GO_BUILD)
-	GOPATH=$(shell pwd) $(GO_INSTALL) petname
+	GOPATH=$(shell pwd) $(GO_BUILD) -o petname cmd/petname/main.go
 
 test: petname.go petname_test.go
-	GOROOT= GOPATH=$(shell pwd) $(GO_TEST)
+	GOPATH=$(shell pwd) $(GO_TEST)
 
 clean:
-	$(RM) -rf petname petname.go petname.a petname.py petname.pyc   init/ linux_amd64/ pkg/
+	$(RM) -rf petname petname.pyc
 
 .PHONY: all clean test

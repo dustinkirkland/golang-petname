@@ -22,7 +22,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"petname"
+	"github.com/dustinkirkland/petname"
 )
 
 var (
