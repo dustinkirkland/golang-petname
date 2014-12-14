@@ -65,5 +65,7 @@ petname (1.0) unreleased; urgency=medium
   * === added directory cmd/petname, cmd/Makefile, cmd/petname_cmd.go =>
     cmd/petname/main.go, petname.go, petname.py, update.sh:
     - waddayaknow, #go-nuts suggests more changes
+  * debian/golang-petname-dev.install:
+    - update some paths
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
