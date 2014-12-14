@@ -79,5 +79,7 @@ petname (1.0) unreleased; urgency=medium
     - fix test syntax
   * debian/petname.install, debian/python-petname.install:
     - fix installs
+  * petname.go, README.md, setup.py:
+    - add a readme, and a python package setup
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600

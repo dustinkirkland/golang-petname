@@ -1,6 +1,6 @@
 /*
-  petname: library for generating human-readable, random names
-           for objects (e.g. hostnames, containers, blobs)
+  petname - library for generating human-readable, random names
+            for objects (e.g. hostnames, containers, blobs)
 
   Copyright 2014 Dustin Kirkland <dustin.kirkland@gmail.com>
 
