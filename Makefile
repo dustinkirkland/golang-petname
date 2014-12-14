@@ -16,6 +16,5 @@ test: petname.go petname_test.go
 	GOPATH=$(shell pwd) $(GO_TEST)
 
 clean:
-	$(RM) -rf petname petname.pyc
 
 .PHONY: all clean test
