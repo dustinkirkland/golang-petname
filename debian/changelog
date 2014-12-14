@@ -88,5 +88,7 @@ petname (1.0) unreleased; urgency=medium
     - auto format
   * petname.go, petname.py:
     - update and commit with latest wordlist changes
+  * debian/control:
+    - clean up python build
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
