@@ -15,30 +15,31 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
+
 class PetName:
-	import random
+    import random
 
-	adverbs = [__adverbs.txt__]
-	adjectives = [__adjectives.txt__]
-	names = [__names.txt__]
+    adverbs = [__adverbs.txt__]
+    adjectives = [__adjectives.txt__]
+    names = [__names.txt__]
 
-	def RandAdverb():
-		return random.choice(adverbs)
+    def RandAdverb():
+        return random.choice(adverbs)
 
-	def RandAdjective():
-		return random.choice(adjectives)
+    def RandAdjective():
+        return random.choice(adjectives)
 
-	def RandName():
-		return random.choice(names)
+    def RandName():
+        return random.choice(names)
 
-	def PetName(words, separator):
-		if words == 1:
-			return RandName()
-		elif words == 2:
-			return RandAdjective() + separator + RandName()
-		petname = []
-		for i in range(0, words-2):
-			petname.append(RandAdverb())
-		petname.append(RandAdjective())
-		petname.append(RandName())
-		return separator.join(petname)
+    def PetName(words, separator):
+        if words == 1:
+            return RandName()
+        elif words == 2:
+            return RandAdjective() + separator + RandName()
+        petname = []
+        for i in range(0, words - 2):
+            petname.append(RandAdverb())
+        petname.append(RandAdjective())
+        petname.append(RandName())
+        return separator.join(petname)

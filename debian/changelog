@@ -84,5 +84,7 @@ petname (1.0) unreleased; urgency=medium
   * adjectives.txt, adverbs.txt:
     - fix capitlization, prune one line
     - prune hyphenated words
+  * petname.go.in, petname.py.in:
+    - auto format
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600

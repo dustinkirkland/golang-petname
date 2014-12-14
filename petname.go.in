@@ -26,9 +26,9 @@ import (
 )
 
 var (
-	adverbs = [...]string{__adverbs.txt__}
+	adverbs    = [...]string{__adverbs.txt__}
 	adjectives = [...]string{__adjectives.txt__}
-	names = [...]string{__names.txt__}
+	names      = [...]string{__names.txt__}
 )
 
 func RandAdverb() string {
@@ -51,7 +51,7 @@ func PetName(words int, separator string) string {
 		return strings.Join([]string{RandAdjective(), RandName()}, separator)
 	}
 	var petname []string
-	for i:=0; i<words-2; i++ {
+	for i := 0; i < words-2; i++ {
 		petname = append(petname, RandAdverb())
 	}
 	petname = append(petname, RandAdjective(), RandName())
