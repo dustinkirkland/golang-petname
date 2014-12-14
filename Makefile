@@ -5,6 +5,5 @@ all:
 clean:
 	make -C src/petname clean
 	make -C src/petname_cmd clean
-	rm -rf pkg
 
 .PHONY: all clean

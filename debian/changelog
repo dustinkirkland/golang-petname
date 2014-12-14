@@ -32,5 +32,9 @@ petname (1.0) unreleased; urgency=medium
     directory etc, === removed directory usr/bin, === renamed directory
     etc/petname => usr/lib/petname, usr/bin/petname:
     - move our wordlists to /usr/lib/petname, out of configurable /etc
+  * debian/control, debian/python-petname.install, Makefile,
+    src/petname/__init__.py, src/petname/Makefile,
+    src/petname/petname.py.in, src/petname/update.sh:
+    - add a python library, too
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600

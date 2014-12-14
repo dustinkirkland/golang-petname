@@ -9,13 +9,13 @@ update:
 	./update.sh
 
 petname: petname.go
-	$(GO_BUILD) petname.go
+	$(GO_BUILD)
 	GOPATH=$(shell pwd)/../../ $(GO_INSTALL) petname
 
 test: petname.go petname_test.go
-	$(GO_TEST)
+	GOROOT= GOPATH=$(shell pwd)/../../ $(GO_TEST)
 
 clean:
-	$(RM) petname petname.go petname.a
+	$(RM) petname petname.go petname.a petname.py petname.pyc
 
 .PHONY: all clean test

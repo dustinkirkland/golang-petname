@@ -2,7 +2,7 @@ Source: petname
 Section: admin
 Priority: optional
 Maintainer: Dustin Kirkland <kirkland@ubuntu.com>
-Build-Depends: debhelper (>= 7.0.50~), golang-go
+Build-Depends: debhelper (>= 7.0.50~), golang-go, python, python-autopep8
 Standards-Version: 3.9.5
 Homepage: http://launchpad.net/petname
 
@@ -22,7 +22,20 @@ Description: generate pronouncable, perhaps even memorable, pet names
 Package: golang-petname-dev
 Architecture: all
 Depends: ${misc:Depends}
-Description: library for generating pronouncable, memorable, pet names
+Description: golang library for generating pronouncable, memorable, pet names
+ This package provides a library for generating "pet names", consisting
+ of a random combination of an adverb, adjective, and proper name.
+ These are useful for unique hostnames, for instance.
+ The default packaging contains about 2000 names, 1300 adjectives,
+ and 4000 adverbs, yielding nearly 10 billion unique combinations,
+ covering over 32 bits of unique namespace.
+ As such, PetName tries to follow the tenets of Zooko's triangle:
+ names are human meaningful, decentralized, and secure.
+
+Package: python-petname
+Architecture: all
+Depends: ${misc:Depends}, ${shlibs:Depends}, ${python:Depends}
+Description: python library for generating pronouncable, memorable, pet names
  This package provides a library for generating "pet names", consisting
  of a random combination of an adverb, adjective, and proper name.
  These are useful for unique hostnames, for instance.
