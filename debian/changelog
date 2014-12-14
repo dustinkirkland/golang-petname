@@ -90,5 +90,9 @@ petname (1.0) unreleased; urgency=medium
     - update and commit with latest wordlist changes
   * debian/control:
     - clean up python build
+  * === added directory petname, debian/python-petname.install,
+    petname.py.in => petname/petname.py.in, petname.py =>
+    petname/petname.py, update.sh:
+    - rearrange dirs for python packaging
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
