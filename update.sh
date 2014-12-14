@@ -8,15 +8,14 @@ cp -f ${PKG}.go.in ${PKG}.go.unf
 cp -f ${PKG}.py.in ${PKG}.py.unf
 
 for f in adverbs.txt adjectives.txt names.txt; do
-	filename=$(basename "$f")
-	rm -f "$filename"
+	rm -f "$f".list
 	for w in $(cat "$f"); do
-		printf '"%s", ' "$w" >> "$filename"
+		printf '"%s", ' "$w" >> "$f".list
 	done
-	sed -i -e "s/, $//" "$filename"
-	sed -i -e "s/__${filename}__/$(cat ${filename})/" ${PKG}.go.unf
-	sed -i -e "s/__${filename}__/$(cat ${filename})/" ${PKG}.py.unf
-	rm -f "$filename"
+	sed -i -e "s/, $//" "$f".list
+	sed -i -e "s/__${f}__/$(cat ${f}.list)/" ${PKG}.go.unf
+	sed -i -e "s/__${f}__/$(cat ${f}.list)/" ${PKG}.py.unf
+	rm -f "$f".list
 done
 gofmt ${PKG}.go.unf > ${PKG}.go
 autopep8 ${PKG}.py.unf > ${PKG}.py

@@ -62,5 +62,8 @@ petname (1.0) unreleased; urgency=medium
     usr/lib/petname/adverbs.txt => adverbs.txt,
     usr/lib/petname/names.txt => names.txt:
     - still trying to make #go-nuts happy, moved txt files top level
+  * === added directory cmd/petname, cmd/Makefile, cmd/petname_cmd.go =>
+    cmd/petname/main.go, petname.go, petname.py, update.sh:
+    - waddayaknow, #go-nuts suggests more changes
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
