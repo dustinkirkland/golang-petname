@@ -7,7 +7,7 @@ PKG="petname"
 cp -f ${PKG}.go.in ${PKG}.go.unf
 cp -f ${PKG}.py.in ${PKG}.py.unf
 
-for f in usr/lib/$PKG/*; do
+for f in adverbs.txt adjectives.txt names.txt; do
 	filename=$(basename "$f")
 	rm -f "$filename"
 	for w in $(cat "$f"); do

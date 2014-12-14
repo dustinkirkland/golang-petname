@@ -56,5 +56,11 @@ petname (1.0) unreleased; urgency=medium
     github.com/dustinkirkland/petname, === renamed directory
     github.com/dustinkirkland/petname_cmd => cmd:
     - still rearranging source tree to make #go-nuts happy
+  * debian/petname.install, === removed directory usr, === removed
+    directory usr/lib, === removed directory usr/lib/petname, update.sh,
+    usr/lib/petname/adjectives.txt => adjectives.txt,
+    usr/lib/petname/adverbs.txt => adverbs.txt,
+    usr/lib/petname/names.txt => names.txt:
+    - still trying to make #go-nuts happy, moved txt files top level
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600

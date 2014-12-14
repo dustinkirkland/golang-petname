@@ -1,2 +1,4 @@
 src/petname_cmd/petname usr/bin
-usr/
+adverbs.txt usr/lib/petname/
+adjectives.txt usr/lib/petname/
+names.txt usr/lib/petname/
