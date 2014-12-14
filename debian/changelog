@@ -45,5 +45,16 @@ petname (1.0) unreleased; urgency=medium
   * === renamed directory github.com/petname =>
     github.com/dustinkirkland:
     - adjust package github location
+  * github.com/dustinkirkland/petname/__init__.py => __init__.py,
+    github.com/dustinkirkland/petname/Makefile,
+    github.com/dustinkirkland/petname/petname.go.in => petname.go.in,
+    github.com/dustinkirkland/petname/petname.py.in => petname.py.in,
+    github.com/dustinkirkland/petname/petname_test.go =>
+    petname_test.go, github.com/dustinkirkland/petname/update.sh =>
+    update.sh, Makefile, === removed directory github.com, === removed
+    directory github.com/dustinkirkland, === removed directory
+    github.com/dustinkirkland/petname, === renamed directory
+    github.com/dustinkirkland/petname_cmd => cmd:
+    - still rearranging source tree to make #go-nuts happy
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
