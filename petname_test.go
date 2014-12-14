@@ -27,7 +27,7 @@ import (
 func TestPetName(t *testing.T) {
 	for i:=0; i<10; i++ {
 		name := PetName(i, "-")
-		if name == nil {
+		if name == "" {
 			t.Fatalf("Did not generate a %d-word name, '%s'", i, name)
 		}
 	}
