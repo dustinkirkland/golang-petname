@@ -86,5 +86,7 @@ petname (1.0) unreleased; urgency=medium
     - prune hyphenated words
   * petname.go.in, petname.py.in:
     - auto format
+  * petname.go, petname.py:
+    - update and commit with latest wordlist changes
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
