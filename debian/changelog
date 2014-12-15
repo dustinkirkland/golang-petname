@@ -1,4 +1,4 @@
-petname (1.0) unreleased; urgency=medium
+golang-petname (1.0) unreleased; urgency=medium
 
   * adverbs.txt, debian/control, debian/petname.install, debian/python-
     petname.install, __init__.py, Makefile, names.txt, petname.go.in,
@@ -6,6 +6,8 @@ petname (1.0) unreleased; urgency=medium
     petname, setup.py, update.sh:
     - rework to a golang only package, rename accordingly
   * debian/golang-petname.install, Makefile:
-    - update build, install binary
+    - update build, install binary, fix name
+  * debian/golang-petname.install, Makefile:
+    - clean up, install in the right place
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
