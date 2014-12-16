@@ -1,4 +1,4 @@
-golang-petname (1.0) unreleased; urgency=medium
+golang-petname (1.0-0ubuntu1) vivid; urgency=medium
 
   * adverbs.txt, debian/control, debian/petname.install, debian/python-
     petname.install, __init__.py, Makefile, names.txt, petname.go.in,
@@ -33,4 +33,4 @@ golang-petname (1.0) unreleased; urgency=medium
   * README.md:
     - readme updated
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 16 Dec 2014 14:07:44 -0600
