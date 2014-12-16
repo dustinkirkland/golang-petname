@@ -25,5 +25,8 @@ golang-petname (1.0) unreleased; urgency=medium
     - add a manpage
   * debian/update-wordlists.sh:
     - add instruction to sync README.md from upstream
+  * === renamed symlink src/github.com/dustinkirkland/petname =>
+    src/github.com/dustinkirkland/golang-petname:
+    - fix symlink
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
