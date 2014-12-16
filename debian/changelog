@@ -17,5 +17,7 @@ golang-petname (1.0) unreleased; urgency=medium
     - drop txt files, we build depend on petname now
   * LICENSE:
     - add license file
+  * README.md:
+    - update readme
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600

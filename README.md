@@ -2,14 +2,23 @@
 
 This utility will generate "pet names", consisting of a random combination of an adverb, adjective, and proper name.  These are useful for unique hostnames, for instance.
 
-The default packaging contains about 2000 names, 1300 adjectives, and 4000 adverbs, yielding nearly 10 billion unique combinations, covering over 32 bits of unique namespace.
-
 As such, PetName tries to follow the tenets of Zooko's triangle.  Names are:
 
  - human meaningful
  - decentralized
  - secure
 
+The default packaging includes:
+
+ - 1,933 names
+ - 1,315 adjectives
+ - 3,656 adverbs
+
+A 1-word PetName consists of one random name.  A 2-word Petname consists of a random adjective and a random name.  A 3-word (or more than 3 word) PetName consists of random adverb(s) and an adjective and a name.
+
+ - 2-word PetNames yield 1,933 x 1,315 = 2,541,895 unique combinations
+ - 3-word PetNames yield 1,933 x 1,315 x 3,656 = 9,293,168,120 unique combinations
+ - 4-word PetNames yield 1,933 x 1,315 x 3,656 x 3,656 = 3.397582265×10¹³ unique combinations
 
 ## Command Line Usage
 
@@ -42,10 +51,39 @@ Command line help:
     adeptlystaticNicole
 
 ## Golang Examples
+```golang
+package main
+
+import (
+        "flag"
+        "fmt"
+        "github.com/dustinkirkland/petname"
+)
+
+var (
+        words = flag.Int("words", 2, "The number of words in the pet name")
+        separator = flag.String("separator", "-", "The separator between words in the pet name")
+)
+
+func main() {
+        flag.Parse()
+        fmt.Println(petname.PetName(*words, *separator))
+}
+```
 
 ## Python Examples
 
-## Editing Word Lists
+```python
+import argparse
+from petname import *
+
+parser = argparse.ArgumentParser(description='Generate human readable random names')
+parser.add_argument('-w', '--words', help='Number of words in name, default=2', default=2)
+parser.add_argument('-s', '--separator', help='Separator between words, default="-"', default="-")
+parser.options = parser.parse_args()
+
+print PetName(int(parser.options.words), parser.options.separator)
+```
 
 ## Credits
 
