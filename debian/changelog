@@ -19,5 +19,7 @@ golang-petname (1.0) unreleased; urgency=medium
     - add license file
   * README.md:
     - update readme
+  * cmd/petname/main.go, debian/copyright, README.md:
+    - update readme, add local location of license
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600

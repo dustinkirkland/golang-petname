@@ -57,7 +57,7 @@ package main
 import (
         "flag"
         "fmt"
-        "github.com/dustinkirkland/petname"
+        "github.com/dustinkirkland/golang-petname"
 )
 
 var (
