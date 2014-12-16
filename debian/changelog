@@ -9,5 +9,9 @@ golang-petname (1.0) unreleased; urgency=medium
     - update build, install binary, fix name
   * debian/golang-petname.install, Makefile:
     - clean up, install in the right place
+  * debian/control, debian/golang-petname.install, Makefile, update.sh
+    => debian/update-wordlists.sh:
+    - install binary into /usr/bin/golang-petname
+    - build depend on petname, update wordlists at build time
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600
