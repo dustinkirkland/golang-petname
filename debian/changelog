@@ -30,5 +30,7 @@ golang-petname (1.0) unreleased; urgency=medium
     - fix symlink
   * debian/lintian-overrides:
     - ignore no-stripped, statically linked binary
+  * README.md:
+    - readme updated
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Sat, 13 Dec 2014 11:27:59 -0600

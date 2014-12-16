@@ -73,6 +73,11 @@ func main() {
 
 ## Python Examples
 
+See: https://pypi.python.org/pypi/petname
+
+    $ pip install petname
+    $ sudo apt-get install python-petname
+
 ```python
 import argparse
 from petname import *
