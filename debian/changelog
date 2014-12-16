@@ -1,9 +1,9 @@
-golang-petname (1.1) unreleased; urgency=medium
+golang-petname (1.1-0ubuntu1) vivid; urgency=medium
 
   * debian/update-wordlists.sh, petname.go:
     - update wordlists from upstream
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 16 Dec 2014 14:07:48 -0600
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 16 Dec 2014 14:33:23 -0600
 
 golang-petname (1.0-0ubuntu1) vivid; urgency=medium
 
