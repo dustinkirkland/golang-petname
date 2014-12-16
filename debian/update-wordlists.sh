@@ -13,3 +13,4 @@ for f in adverbs adjectives names; do
 	sed -i -e "s/^        $f    = [...]string{.*$/        $f    = [...]string{$(cat ${f}.txt.list)}/" ${PKG}.go
 	rm -f "$f".txt.list
 done
+cat /usr/share/doc/petname/README.md > README.md
