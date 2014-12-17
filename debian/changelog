@@ -1,6 +1,7 @@
 golang-petname (1.2) unreleased; urgency=medium
 
-  * UNRELEASED
+  * petname.go, petname_test.go:
+    - add some inline godoc documentation
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 16 Dec 2014 14:33:27 -0600
 
