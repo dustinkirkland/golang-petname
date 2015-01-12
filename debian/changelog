@@ -7,6 +7,8 @@ golang-petname (1.2) unreleased; urgency=medium
     - arch: any, let it build where it builds
   * debian/copyright:
     - update upstream name
+  * debian/update-wordlists.sh:
+    - update word list location to share
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 16 Dec 2014 14:33:27 -0600
 
