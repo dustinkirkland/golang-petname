@@ -1,4 +1,4 @@
-golang-petname (1.2) unreleased; urgency=medium
+golang-petname (1.2-0ubuntu1) vivid; urgency=medium
 
   * petname.go, petname_test.go:
     - add some inline godoc documentation, fix format
@@ -12,7 +12,7 @@ golang-petname (1.2) unreleased; urgency=medium
   * petname.go:
     - update wordlists
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 16 Dec 2014 14:33:27 -0600
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 12 Jan 2015 09:53:24 -0600
 
 golang-petname (1.1-0ubuntu1) vivid; urgency=medium
 
