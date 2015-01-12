@@ -9,7 +9,7 @@ Vcs-Browser: http://bazaar.launchpad.net/~petname/petname/trunk/files
 Vcs-Bzr: https://code.launchpad.net/petname/petname/trunk
 
 Package: golang-petname
-Architecture: amd64 i386
+Architecture: any
 Depends: ${misc:Depends}
 Description: generate pronouncable, perhaps even memorable, pet names
  This utility will generate "pet names", consisting of a random
