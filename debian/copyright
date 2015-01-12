@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: petname
+Upstream-Name: golang-petname
 Upstream-Contact: Dustin Kirkland <dustin.kirkland@gmail.com>
-Source: http://launchpad.net/petname
+Source: http://launchpad.net/golang-petname
 
 Files: *
 Copyright: 2014, Dustin Kirkland <dustin.kirkland@gmail.com>
