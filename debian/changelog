@@ -9,6 +9,8 @@ golang-petname (1.2) unreleased; urgency=medium
     - update upstream name
   * debian/update-wordlists.sh:
     - update word list location to share
+  * petname.go:
+    - update wordlists
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 16 Dec 2014 14:33:27 -0600
 
