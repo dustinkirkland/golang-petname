@@ -22,6 +22,8 @@ package main
 import (
 	"flag"
 	"fmt"
+	"rand"
+	"time"
 	"github.com/dustinkirkland/golang-petname"
 )
 
