@@ -60,7 +60,6 @@ func Name() string {
 // If three or more words are requested, a variable number of RandAdverb() and a RandAdjective and a RandName() is returned.
 // The separator can be any charater, string, or the empty string.
 func PetName(words int, separator string) string {
-	rand.Seed(time.Now().UnixNano())
 	if words == 1 {
 		return RandName()
 	} else if words == 2 {

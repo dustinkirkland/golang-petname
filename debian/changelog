@@ -2,6 +2,8 @@ golang-petname (1.3) unreleased; urgency=medium
 
   * petname.go:
     - add note that these lists aren't manually updated/modified
+  * cmd/petname/main.go, petname.go:
+    - move the prng seeding to the end caller of the function
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 12 Jan 2015 09:53:26 -0600
 
