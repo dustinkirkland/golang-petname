@@ -55,20 +55,20 @@ func Name() string {
 
 // PetName generates and returns a random pet name.
 // It takes two parameters:  the number of words in the name, and a separator token.
-// If a single word is requested, simply a RandName() is returned.
-// If two words are requested, a RandAdjective() and a RandName() are returned.
-// If three or more words are requested, a variable number of RandAdverb() and a RandAdjective and a RandName() is returned.
+// If a single word is requested, simply a Name() is returned.
+// If two words are requested, a Adjective() and a Name() are returned.
+// If three or more words are requested, a variable number of Adverb() and a Adjective and a Name() is returned.
 // The separator can be any charater, string, or the empty string.
 func PetName(words int, separator string) string {
 	if words == 1 {
-		return RandName()
+		return Name()
 	} else if words == 2 {
-		return strings.Join([]string{RandAdjective(), RandName()}, separator)
+		return Adjective() + separator + Name()
 	}
 	var petname []string
 	for i := 0; i < words-2; i++ {
-		petname = append(petname, RandAdverb())
+		petname = append(petname, Adverb())
 	}
-	petname = append(petname, RandAdjective(), RandName())
+	petname = append(petname, Adjective(), Name())
 	return strings.Join(petname, separator)
 }
