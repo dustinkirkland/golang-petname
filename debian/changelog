@@ -1,6 +1,7 @@
 golang-petname (1.3) unreleased; urgency=medium
 
-  * UNRELEASED
+  * petname.go:
+    - add note that these lists aren't manually updated/modified
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 12 Jan 2015 09:53:26 -0600
 
