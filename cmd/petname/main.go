@@ -22,7 +22,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"rand"
+	"math/rand"
 	"time"
 	"github.com/dustinkirkland/golang-petname"
 )
