@@ -1,4 +1,4 @@
-golang-petname (1.4) unreleased; urgency=medium
+golang-petname (1.4-0ubuntu1) vivid; urgency=medium
 
   * cmd/petname/main.go, petname.go, petname_test.go:
     - change petname.PetName() to petname.Generate()
