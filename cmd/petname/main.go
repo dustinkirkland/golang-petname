@@ -35,5 +35,5 @@ var (
 func main() {
 	flag.Parse()
 	rand.Seed(time.Now().UnixNano())
-	fmt.Println(petname.PetName(*words, *separator))
+	fmt.Println(petname.Generate(*words, *separator))
 }

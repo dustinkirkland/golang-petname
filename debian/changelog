@@ -1,6 +1,7 @@
 golang-petname (1.4) unreleased; urgency=medium
 
-  * UNRELEASED
+  * cmd/petname/main.go, petname.go, petname_test.go:
+    - change petname.PetName() to petname.Generate()
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 13 Jan 2015 11:19:06 -0600
 

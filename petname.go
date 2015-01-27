@@ -52,13 +52,13 @@ func Name() string {
 	return names[rand.Intn(len(names))]
 }
 
-// PetName generates and returns a random pet name.
+// Generate generates and returns a random pet name.
 // It takes two parameters:  the number of words in the name, and a separator token.
 // If a single word is requested, simply a Name() is returned.
 // If two words are requested, a Adjective() and a Name() are returned.
 // If three or more words are requested, a variable number of Adverb() and a Adjective and a Name() is returned.
 // The separator can be any charater, string, or the empty string.
-func PetName(words int, separator string) string {
+func Generate(words int, separator string) string {
 	if words == 1 {
 		return Name()
 	} else if words == 2 {
