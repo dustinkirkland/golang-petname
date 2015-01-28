@@ -10,15 +10,14 @@ As such, PetName tries to follow the tenets of Zooko's triangle.  Names are:
 
 The default packaging includes:
 
- - 1,933 names
- - 1,315 adjectives
- - 3,656 adverbs
+ - 5,931 names
+ - 37,389 adjectives
+ - 12,814 adverbs
 
 A 1-word PetName consists of one random name.  A 2-word Petname consists of a random adjective and a random name.  A 3-word (or more than 3 word) PetName consists of random adverb(s) and an adjective and a name.
 
- - 2-word PetNames yield 1,933 x 1,315 = 2,541,895 unique combinations
- - 3-word PetNames yield 1,933 x 1,315 x 3,656 = 9,293,168,120 unique combinations
- - 4-word PetNames yield 1,933 x 1,315 x 3,656 x 3,656 = 3.397582265×10¹³ unique combinations
+ - 2-word PetNames yield 5,931 x 37,389 = 221,754,159 unique combinations
+ - 3-word PetNames yield 5,931 x 37,389 x 12,814 = 2.8415578x10^12 unique combinations
 
 ## Command Line Usage
 
@@ -27,8 +26,9 @@ Command line help:
     usage: petname [--words INT] [--separator STR]
 
     optional arguments:
-        --words            number of words in the name, default is 2
-        --separator        string used to separate name words, default is '-'
+        -w|--words            number of words in the name, default is 2
+        -s|--separator        string used to separate name words, default is '-'
+        -d|--dir              directory containing adverbs.txt, adjectives.txt, names.txt, default is \fI/usr/share/petname/\fP
 
 ## Command Line Examples
 
@@ -67,7 +67,7 @@ var (
 
 func main() {
         flag.Parse()
-        fmt.Println(petname.PetName(*words, *separator))
+        fmt.Println(petname.Generate(*words, *separator))
 }
 ```
 
@@ -80,14 +80,14 @@ See: https://pypi.python.org/pypi/petname
 
 ```python
 import argparse
-from petname import *
+import petname
 
 parser = argparse.ArgumentParser(description='Generate human readable random names')
 parser.add_argument('-w', '--words', help='Number of words in name, default=2', default=2)
 parser.add_argument('-s', '--separator', help='Separator between words, default="-"', default="-")
 parser.options = parser.parse_args()
 
-print PetName(int(parser.options.words), parser.options.separator)
+print petname.Generate(int(parser.options.words), parser.options.separator)
 ```
 
 ## Credits

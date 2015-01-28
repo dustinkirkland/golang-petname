@@ -1,6 +1,7 @@
 golang-petname (1.5) unreleased; urgency=medium
 
-  * UNRELEASED
+  * debian/update-wordlists.sh, petname.go, README.md:
+    - rebuild and release with updated wordlists
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 26 Jan 2015 19:59:53 -0600
 
