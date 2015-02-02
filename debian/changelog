@@ -1,6 +1,6 @@
 golang-petname (1.6) unreleased; urgency=medium
 
-  * UNRELEASED
+  * No op change, testing gopkg in git
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Wed, 28 Jan 2015 16:10:05 -0600
 
