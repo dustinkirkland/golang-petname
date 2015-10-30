@@ -1,3 +1,9 @@
+golang-petname (1.7) unreleased; urgency=medium
+
+  * UNRELEASED
+
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Fri, 30 Oct 2015 10:20:29 -0500
+
 golang-petname (1.6-0ubuntu1) xenial; urgency=medium
 
   * No op change, testing gopkg in git
