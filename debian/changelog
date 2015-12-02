@@ -1,6 +1,11 @@
 golang-petname (1.7) unreleased; urgency=medium
 
-  * UNRELEASED
+  * debian/control, debian/rules: LP: #1520687
+    - fixes for MIR of -dev library package
+    - add a build-depends on dh-golang
+    - build --with=golang
+    - note the binary was Built-Using
+    - add a metapackage that meets the Debian standard naming for go libs
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Fri, 30 Oct 2015 10:20:29 -0500
 

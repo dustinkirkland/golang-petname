@@ -1,7 +1,9 @@
 #!/usr/bin/make -f
 
+export DH_GOPKG := github.com/dustinkirkland/golang-petname
+
 %:
-	dh $@
+	dh --with=golang $@
 
 override_dh_auto_build:
 	./debian/update-wordlists.sh
