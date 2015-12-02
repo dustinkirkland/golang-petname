@@ -1,3 +1,9 @@
+golang-petname (1.9) unreleased; urgency=medium
+
+  * UNRELEASED
+
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Wed, 02 Dec 2015 17:19:11 -0600
+
 golang-petname (1.8-0ubuntu1) xenial; urgency=medium
 
   * debian/control, debian/rules, debian/update-wordlists.sh:
