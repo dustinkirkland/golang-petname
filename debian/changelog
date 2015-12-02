@@ -1,4 +1,4 @@
-golang-petname (1.7) unreleased; urgency=medium
+golang-petname (1.7-0ubuntu1) xenial; urgency=medium
 
   * debian/control, debian/rules: LP: #1520687
     - fixes for MIR of -dev library package
@@ -7,7 +7,7 @@ golang-petname (1.7) unreleased; urgency=medium
     - note the binary was Built-Using
     - add a metapackage that meets the Debian standard naming for go libs
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Fri, 30 Oct 2015 10:20:29 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Wed, 02 Dec 2015 16:55:42 -0600
 
 golang-petname (1.6-0ubuntu1) xenial; urgency=medium
 
