@@ -6,7 +6,7 @@ export DH_GOPKG := github.com/dustinkirkland/golang-petname
 	dh --with=golang $@
 
 override_dh_auto_build:
-	./debian/update-wordlists.sh
+	#./debian/update-wordlists.sh
 	dh_auto_build
 
 override_dh_strip:

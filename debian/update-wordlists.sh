@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# This script only needs to be run by the upstream package maintainer (Dustin Kirkland)
+# if the upstream petname wordlists change
+
 set -e
 
 PKG="petname"
