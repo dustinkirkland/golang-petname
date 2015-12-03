@@ -1,6 +1,9 @@
 golang-petname (1.9) unreleased; urgency=medium
 
-  * UNRELEASED
+  * debian/golang-petname-dev.install, debian/rules:
+    - install the source code to the appropriate location per
+      http://pkg-go.alioth.debian.org/packaging.html#_file_locations
+    - simplify build rules, remove strip override
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Wed, 02 Dec 2015 17:19:11 -0600
 
