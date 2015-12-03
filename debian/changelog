@@ -1,11 +1,11 @@
-golang-petname (1.9) unreleased; urgency=medium
+golang-petname (1.9-0ubuntu1) xenial; urgency=medium
 
   * debian/golang-petname-dev.install, debian/rules:
     - install the source code to the appropriate location per
       http://pkg-go.alioth.debian.org/packaging.html#_file_locations
     - simplify build rules, remove strip override
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Wed, 02 Dec 2015 17:19:11 -0600
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Thu, 03 Dec 2015 10:07:22 -0600
 
 golang-petname (1.8-0ubuntu1) xenial; urgency=medium
 
