@@ -1,3 +1,9 @@
+golang-petname (1.10) unreleased; urgency=medium
+
+  * UNRELEASED
+
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Thu, 03 Dec 2015 10:07:24 -0600
+
 golang-petname (1.9-0ubuntu1) xenial; urgency=medium
 
   * debian/golang-petname-dev.install, debian/rules:
