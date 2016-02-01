@@ -3,4 +3,4 @@
 export DH_GOPKG := github.com/dustinkirkland/golang-petname
 
 %:
-	dh --with=golang $@
+	dh $@ --buildsystem=golang --with=golang

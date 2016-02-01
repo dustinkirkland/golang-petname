@@ -1,6 +1,7 @@
 golang-petname (1.10) unreleased; urgency=medium
 
-  * UNRELEASED
+  [ Michael Hudson-Doyle ]
+  * Make packaging more typical for a package that uses dh-golang.
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Thu, 03 Dec 2015 10:07:24 -0600
 
