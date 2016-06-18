@@ -1,6 +1,7 @@
 golang-petname (1.11) unreleased; urgency=medium
 
-  * UNRELEASED
+  * petname.go, README.md:
+    - remove some non-words
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 01 Feb 2016 11:14:52 -0600
 

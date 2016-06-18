@@ -23,32 +23,33 @@ A 1-word PetName consists of one random name.  A 2-word Petname consists of a ra
 
 Command line help:
 
-    usage: petname [--words INT] [--separator STR]
+    usage: petname [--words INT] [--separator STR] [--letters INT]
 
     optional arguments:
         -w|--words            number of words in the name, default is 2
+        -l|--letters          maximum number of letters in each word, default is 6
         -s|--separator        string used to separate name words, default is '-'
         -d|--dir              directory containing adverbs.txt, adjectives.txt, names.txt, default is \fI/usr/share/petname/\fP
 
 ## Command Line Examples
 
     $ petname
-    wiggly-Anna
+    scary-mara
 
     $ petname --words 1
-    Marco
+    marco
 
     $ petname --words 3
-    quickly-scornful-Johnathan
+    first-wary-jenae
 
     $ petname --words 4
-    dolorously-leisurely-wee-Susan
+    coaly-filly-rare-mark
 
     $ petname --separator ":"
-    hospitable:Isla
+    leery:jolie
 
     $ petname --separator "" --words 3
-    adeptlystaticNicole
+    follypilyjaney
 
 ## Golang Examples
 ```golang
