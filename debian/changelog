@@ -1,7 +1,12 @@
 golang-petname (1.11) unreleased; urgency=medium
 
+  [ Dustin Kirkland ]
   * petname.go, README.md:
     - remove some non-words
+
+  [ Michael Hudson-Doyle ]
+  * debian/control, debian/golang-petname-dev.install:
+    - Build shared lib package.
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 01 Feb 2016 11:14:52 -0600
 
