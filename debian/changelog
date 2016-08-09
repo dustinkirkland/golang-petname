@@ -1,4 +1,4 @@
-golang-petname (2.1) unreleased; urgency=medium
+golang-petname (2.1-0ubuntu1) yakkety; urgency=medium
 
   [ Michael Hudson-Doyle ]
   * debian/control, debian/golang-petname-dev.install:
@@ -13,7 +13,7 @@ golang-petname (2.1) unreleased; urgency=medium
         build-dependency on xenial
       + create the usr/lib dir, and always install it
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 09 Aug 2016 14:17:24 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 09 Aug 2016 16:25:53 -0500
 
 golang-petname (2.0-0ubuntu1) yakkety; urgency=medium
 
