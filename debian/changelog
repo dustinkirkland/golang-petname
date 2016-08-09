@@ -1,4 +1,4 @@
-golang-petname (2.0) unreleased; urgency=medium
+golang-petname (2.0-0ubuntu1) yakkety; urgency=medium
 
   [ Dustin Kirkland ]
   * petname.go, README.md:
@@ -9,7 +9,7 @@ golang-petname (2.0) unreleased; urgency=medium
     - bump to petname 2.0, using animals instead of people names, major change
     - rebuild with simplest, smallest wordlist
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 01 Feb 2016 11:14:52 -0600
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 09 Aug 2016 14:17:20 -0500
 
 golang-petname (1.10-0ubuntu1) xenial; urgency=medium
 
