@@ -1,11 +1,11 @@
-golang-petname (2.2) unreleased; urgency=medium
+golang-petname (2.2-0ubuntu1) yakkety; urgency=medium
 
   * debian/rules, === removed directory usr, === removed directory
     usr/lib:
     - fix shared library build on yakkety while maintaining xenial
       no-shared-lib build
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 09 Aug 2016 16:25:55 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 09 Aug 2016 18:04:30 -0500
 
 golang-petname (2.1-0ubuntu1) yakkety; urgency=medium
 
