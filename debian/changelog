@@ -1,6 +1,17 @@
 golang-petname (2.1) unreleased; urgency=medium
 
-  * UNRELEASED
+  [ Michael Hudson-Doyle ]
+  * debian/control, debian/golang-petname-dev.install:
+    - Build shared lib package.
+
+  [ Dustin Kirkland ]
+  * === added directory usr, === added directory usr/lib,
+    debian/control, debian/golang-petname-dev.install:
+    - add a couple of hacks, to not break the build on releases before
+      yakkety
+      + namely, use a dummy (dh-apparmor) to ensure we can meet a
+        build-dependency on xenial
+      + create the usr/lib dir, and always install it
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 09 Aug 2016 14:17:24 -0500
 
