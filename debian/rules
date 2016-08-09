@@ -4,3 +4,7 @@ export DH_GOPKG := github.com/dustinkirkland/golang-petname
 
 %:
 	dh $@ --buildsystem=golang --with=golang
+
+override_dh_install:
+	mkdir -p ${PWD}/debian/tmp/usr/lib
+	dh_install
