@@ -1,6 +1,7 @@
 golang-petname (2.3) unreleased; urgency=medium
 
-  * UNRELEASED
+  * debian/rules:
+    - don't build libgolang-petname1 on xenial
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 09 Aug 2016 18:04:32 -0500
 

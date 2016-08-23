@@ -1,5 +1,8 @@
 #!/usr/bin/make -f
 
+ifneq ($(shell ls -d /usr/share/doc/golang-any-shared-dev/),/usr/share/doc/golang-any-shared-dev/)
+	export DH_OPTIONS := -Nlibgolang-petname1
+endif
 export DH_GOPKG := github.com/dustinkirkland/golang-petname
 
 %:
