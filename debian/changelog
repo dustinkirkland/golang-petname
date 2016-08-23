@@ -1,9 +1,9 @@
-golang-petname (2.3) unreleased; urgency=medium
+golang-petname (2.3-0ubuntu1) yakkety; urgency=medium
 
   * debian/rules:
     - don't build libgolang-petname1 on xenial
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 09 Aug 2016 18:04:32 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 23 Aug 2016 09:26:37 -0400
 
 golang-petname (2.2-0ubuntu1) yakkety; urgency=medium
 
