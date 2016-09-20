@@ -1,6 +1,7 @@
 golang-petname (2.4) unreleased; urgency=medium
 
-  * UNRELEASED
+  * debian/control, debian/rules: LP: #1625753
+    - fix uninstallable golang-petname-dev on xenial
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 23 Aug 2016 09:26:39 -0400
 
