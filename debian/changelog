@@ -1,3 +1,9 @@
+golang-petname (2.5) unreleased; urgency=medium
+
+  * UNRELEASED
+
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 20 Sep 2016 14:48:08 -0500
+
 golang-petname (2.4-0ubuntu1) yakkety; urgency=medium
 
   * debian/control, debian/rules: LP: #1625753
