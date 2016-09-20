@@ -1,9 +1,9 @@
-golang-petname (2.4) unreleased; urgency=medium
+golang-petname (2.4-0ubuntu1) yakkety; urgency=medium
 
   * debian/control, debian/rules: LP: #1625753
     - fix uninstallable golang-petname-dev on xenial
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 23 Aug 2016 09:26:39 -0400
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 20 Sep 2016 14:48:06 -0500
 
 golang-petname (2.3-0ubuntu1) yakkety; urgency=medium
 
