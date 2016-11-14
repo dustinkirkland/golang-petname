@@ -1,6 +1,9 @@
 golang-petname (2.5) unreleased; urgency=medium
 
-  * UNRELEASED
+  [ Alexander Sack ]
+  * petname.go:
+    - initialize with a random seed,
+      https://github.com/dustinkirkland/golang-petname/pull/1
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 20 Sep 2016 14:48:08 -0500
 
