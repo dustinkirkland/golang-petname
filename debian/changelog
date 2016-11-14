@@ -1,11 +1,11 @@
-golang-petname (2.5) unreleased; urgency=medium
+golang-petname (2.5-0ubuntu1) zesty; urgency=medium
 
   [ Alexander Sack ]
   * petname.go:
     - initialize with a random seed,
       https://github.com/dustinkirkland/golang-petname/pull/1
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 20 Sep 2016 14:48:08 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 14 Nov 2016 09:34:59 -0600
 
 golang-petname (2.4-0ubuntu1) yakkety; urgency=medium
 
