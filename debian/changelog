@@ -1,3 +1,9 @@
+golang-petname (2.6) unreleased; urgency=medium
+
+  * UNRELEASED
+
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 14 Nov 2016 09:35:01 -0600
+
 golang-petname (2.5-0ubuntu1) zesty; urgency=medium
 
   [ Alexander Sack ]
