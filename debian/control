@@ -24,7 +24,7 @@ Description: generate pronouncable, perhaps even memorable, pet names
 
 Package: golang-petname-dev
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${extra:Depends}
 Description: golang library for generating pronouncable, memorable, pet names
  This package provides a library for generating "pet names", consisting
  of a random combination of an adverb, adjective, and proper name.
