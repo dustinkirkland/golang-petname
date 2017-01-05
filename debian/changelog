@@ -1,10 +1,10 @@
-golang-petname (2.6) UNRELEASED; urgency=medium
+golang-petname (2.6-0ubuntu1) zesty; urgency=medium
 
   [ Michael Hudson-Doyle ]
   * Fix repeated use of shlibs:Depends substvar that lead to broken Depends.
     - https://github.com/dustinkirkland/golang-petname/pull/2
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 14 Nov 2016 09:35:01 -0600
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Thu, 05 Jan 2017 15:50:06 -0600
 
 golang-petname (2.5-0ubuntu1) zesty; urgency=medium
 
