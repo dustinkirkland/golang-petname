@@ -32,6 +32,10 @@ var (
 	separator = flag.String("separator", "-", "The separator between words in the pet name")
 )
 
+func init() {
+	rand.Seed(time.Now().UTC().UnixNano())
+}
+
 func main() {
 	flag.Parse()
 	rand.Seed(time.Now().UnixNano())
