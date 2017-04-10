@@ -4,6 +4,10 @@ golang-petname (2.7) unreleased; urgency=medium
   * README.md:
     - https://github.com/dustinkirkland/golang-petname/pull/3
     - update README.md to be Markdown compliant #3
+  * cmd/petname/main.go, petname.go:
+    - move random seeding to the main function
+    - callers of our library will need to ensure their PRNG
+      is properly seeded
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Thu, 05 Jan 2017 15:50:08 -0600
 
