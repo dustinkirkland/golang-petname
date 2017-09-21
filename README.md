@@ -82,11 +82,13 @@ func main() {
 **Python Example**
 See: https://pypi.golang.org/pypi/petname
 
-$ pip install petname
-$ sudo apt-get install golang-petname
+```
+$ pip3 install petname
+$ sudo apt-get install python3-petname
+```
 
 ```python
-#!/usr/bin/python
+#!/usr/bin/python3
 import argparse
 import petname
 
