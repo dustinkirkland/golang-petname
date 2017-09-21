@@ -1,9 +1,9 @@
-golang-petname (2.8) unreleased; urgency=medium
+golang-petname (2.8-0ubuntu1) artful; urgency=medium
 
   * petname.go, README.md:
     - update wordlists, from petname upstream changes
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Thu, 27 Apr 2017 18:08:49 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Thu, 21 Sep 2017 17:06:33 -0500
 
 golang-petname (2.7-0ubuntu1) artful; urgency=medium
 
