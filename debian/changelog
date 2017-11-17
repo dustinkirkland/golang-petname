@@ -1,4 +1,4 @@
-golang-petname (2.9) unreleased; urgency=medium
+golang-petname (2.9-0ubuntu1) unstable; urgency=medium
 
   [ Michael Hudson-Doyle ]
   * Stop building shared library package.
