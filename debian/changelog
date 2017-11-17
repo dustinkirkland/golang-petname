@@ -1,6 +1,8 @@
 golang-petname (2.9) unreleased; urgency=medium
 
-  * UNRELEASED
+  [ Michael Hudson-Doyle ]
+  * Stop building shared library package.
+    - https://github.com/dustinkirkland/golang-petname/pull/6
 
  -- Dustin Kirkland <kirkland@ubuntu.com>  Thu, 21 Sep 2017 17:06:36 -0500
 
