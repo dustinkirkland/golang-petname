@@ -22,13 +22,71 @@
 package petname
 
 import (
+	"bufio"
+	"fmt"
+	"strings"
 	"testing"
+
+	"github.com/dustinkirkland/golang-petname/dict"
+	"github.com/dustinkirkland/golang-petname/dict/large"
+	"github.com/dustinkirkland/golang-petname/dict/medium"
+	"github.com/dustinkirkland/golang-petname/dict/small"
 )
 
+func TestDicts(t *testing.T) {
+	dicts := []*dict.Dict{
+		small.Dict,
+		medium.Dict,
+		large.Dict,
+	}
+	for di, d := range dicts {
+		wordSources := []dict.WordSource{
+			d.Adverbs,
+			d.Adjectives,
+			d.Names,
+		}
+		for wi, w := range wordSources {
+			if err := testWordSource(w); err != nil {
+				t.Fatalf("word source %d of dict %d: %v",
+					wi, di, err)
+			}
+		}
+	}
+}
+
 // Make sure the generated names exist
+func testWordSource(w dict.WordSource) error {
+	lines := strings.Count(w.Words, "\n")
+	if w.Count != lines {
+		return fmt.Errorf("has %d lines but says it has %d words", lines, w.Count)
+	}
+
+	// Test word access by iterating the source's lines and comparing them
+	// to the result of `WordSource.Word(lineIndex)`.
+	scanner := bufio.NewScanner(strings.NewReader(w.Words))
+	expectingEOF := false
+	for i := 0; scanner.Scan(); i++ {
+		if expectingEOF {
+			return fmt.Errorf("expected eof after blank line #%d, got %q instead", i, scanner.Text())
+		}
+		if scanner.Text() == "" {
+			expectingEOF = true
+		}
+		if scanner.Text() != w.Word(i) {
+			return fmt.Errorf("word at line %d should be %q, got %q instead", i, scanner.Text(), w.Word(i))
+		}
+	}
+	if err := scanner.Err(); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+// Make sure the generated names exist.
 func TestPetName(t *testing.T) {
-	for i:=0; i<10; i++ {
-		name := Generate(i, "-")
+	for i := 0; i < 10; i++ {
+		name := Generate(small.Dict, i, "-")
 		if name == "" {
 			t.Fatalf("Did not generate a %d-word name, '%s'", i, name)
 		}
