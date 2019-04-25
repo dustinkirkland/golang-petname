@@ -9,10 +9,11 @@
 **petname** \[-w|--words INT\] \[-l|--letters INT\] \[-s|--separator STR\] \[-d|--dir STR\] \[-c|--complexity INT\] \[-u|--ubuntu\]
 
 ## OPTIONS []()
+
 - -w|--words number of words in the name, default is 2
 - -l|--letters maximum number of letters in each word, default is unlimited
 - -s|--separator string used to separate name words, default is ’-’
-- -d|--dir directory containing adverbs.txt, adjectives.txt, names.txt, default is */usr/share/petname/*
+- -d|--dir directory containing adverbs.txt, adjectives.txt, names.txt, default is _/usr/share/petname/_
 - -c|--complexity \[0, 1, 2\]; 0 = easy words, 1 = standard words, 2 = complex words, default=1
 - -u|--ubuntu generate ubuntu-style names, alliteration of first character of each word
 
@@ -59,6 +60,7 @@ massive-colt
 Besides this shell utility, there are also native libraries: python-petname, python3-petname, and golang-petname. Here are some programmatic examples in code:
 
 **Golang Example**
+
 ```golang
 package main
 
@@ -66,6 +68,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/dustinkirkland/golang-petname"
+	"github.com/dustinkirkland/golang-petname/dict/small"
 )
 
 var (
@@ -75,7 +78,7 @@ var (
 
 func main() {
 	flag.Parse()
-	fmt.Println(petname.Generate(\*words, \*separator))
+	fmt.Println(petname.Generate(small.Dict, \*words, \*separator))
 }
 ```
 
@@ -104,6 +107,6 @@ print petname.Generate(int(parser.options.words), parser.options.separator)
 
 This manpage and the utility were written by Dustin Kirkland &lt;dustin.kirkland@gmail.com&gt; for Ubuntu systems (but may be used by others). Permission is granted to copy, distribute and/or modify this document and the utility under the terms of the Apache2 License.
 
-The complete text of the Apache2 License can be found in */usr/share/common-licenses/Apache-2.0* on Debian/Ubuntu systems.
+The complete text of the Apache2 License can be found in _/usr/share/common-licenses/Apache-2.0_ on Debian/Ubuntu systems.
 
-------------------------------------------------------------------------
+---
