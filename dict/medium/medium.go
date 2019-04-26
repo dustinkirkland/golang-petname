@@ -1,6 +1,6 @@
 package medium
 
-import "github.com/dustinkirkland/golang-petname/dict"
+import "github.com/zippoxer/golang-petname/dict"
 
 var Dict = &dict.Dict{
 	Adverbs: dict.WordSource{

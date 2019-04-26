@@ -27,10 +27,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/dustinkirkland/golang-petname/dict"
-	"github.com/dustinkirkland/golang-petname/dict/large"
-	"github.com/dustinkirkland/golang-petname/dict/medium"
-	"github.com/dustinkirkland/golang-petname/dict/small"
+	"github.com/zippoxer/golang-petname/dict"
+	"github.com/zippoxer/golang-petname/dict/large"
+	"github.com/zippoxer/golang-petname/dict/medium"
+	"github.com/zippoxer/golang-petname/dict/small"
 )
 
 func TestDicts(t *testing.T) {
