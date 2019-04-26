@@ -1,3 +1,3 @@
-module github.com/dustinkirkland/golang-petname
+module github.com/zippoxer/golang-petname
 
 go 1.12
