@@ -1,3 +1,9 @@
+golang-petname (2.11) unreleased; urgency=medium
+
+  * UNRELEASED
+
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Thu, 13 Jun 2019 15:04:56 -0500
+
 golang-petname (2.10-0ubuntu1) eoan; urgency=medium
 
   * README.md:
