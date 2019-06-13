@@ -1,8 +1,9 @@
 golang-petname (2.10) unreleased; urgency=medium
 
-  * UNRELEASED
+  * README.md:
+    - update to the newer python-petname readme
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Fri, 17 Nov 2017 10:42:34 -0600
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Wed, 12 Jun 2019 19:43:16 -0500
 
 golang-petname (2.9-0ubuntu1) unstable; urgency=medium
 
