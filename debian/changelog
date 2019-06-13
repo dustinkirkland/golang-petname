@@ -2,8 +2,10 @@ golang-petname (2.10) unreleased; urgency=medium
 
   * README.md:
     - update to the newer python-petname readme
+    - refer to https://tools.ietf.org/html/rfc1178
+    - update golang and python examples
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Wed, 12 Jun 2019 19:43:16 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Wed, 12 Jun 2019 19:55:12 -0500
 
 golang-petname (2.9-0ubuntu1) unstable; urgency=medium
 
