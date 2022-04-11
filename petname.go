@@ -63,7 +63,7 @@ func Name() string {
 // If a single word is requested, simply a Name() is returned.
 // If two words are requested, a Adjective() and a Name() are returned.
 // If three or more words are requested, a variable number of Adverb() and a Adjective and a Name() is returned.
-// The separator can be any charater, string, or the empty string.
+// The separator can be any character, string, or the empty string.
 func Generate(words int, separator string) string {
 	if words == 1 {
 		return Name()
