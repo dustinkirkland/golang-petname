@@ -18,7 +18,7 @@ for f in adverbs adjectives names; do
 done
 printf "\n)\n\n" >> "$f".txt.list
 grep -B 1000 "^var (" ${PKG}.go > above
-grep -A 1000 "^// Adverb returns" ${PKG}.go > below
+grep -A 1000 "^// End word lists" ${PKG}.go > below
 cat above *.txt.list below > ${PKG}.go
 go fmt ${PKG}.go
 rm -f *.txt.list above below

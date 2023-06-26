@@ -7,8 +7,10 @@ golang-petname (2.11) unreleased; urgency=medium
   [ Dustin Kirkland ]
   * debian/update-wordlists.sh:
     - remove bzr dependency here
+  * debian/update-wordlists.sh, petname.go:
+    - Use a new comment to denote end of word lists
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 26 Jun 2023 16:53:48 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 26 Jun 2023 16:58:25 -0500
 
 golang-petname (2.10-0ubuntu1) eoan; urgency=medium
 
