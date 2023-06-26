@@ -11,8 +11,10 @@ golang-petname (2.11) unreleased; urgency=medium
     - Use a new comment to denote end of word lists
   * petname.go:
     - updated wordlists to match upstream
+  * debian/control, debian/copyright:
+    - updated to relocate source from Launchpad to github
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 26 Jun 2023 16:59:22 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 26 Jun 2023 17:04:15 -0500
 
 golang-petname (2.10-0ubuntu1) eoan; urgency=medium
 

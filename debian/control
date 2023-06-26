@@ -4,9 +4,8 @@ Priority: optional
 Maintainer: Dustin Kirkland <kirkland@ubuntu.com>
 Build-Depends: debhelper (>= 9), dh-exec, dh-golang, golang-go
 Standards-Version: 3.9.5
-Homepage: http://launchpad.net/petname
-Vcs-Browser: http://bazaar.launchpad.net/~petname/petname/trunk/files
-Vcs-Bzr: https://code.launchpad.net/petname/petname/trunk
+Homepage: https://github.com/dustinkirkland/golang-petname
+Vcs-Browser: https://github.com/dustinkirkland/golang-petname
 
 Package: golang-petname
 Architecture: any
