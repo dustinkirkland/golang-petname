@@ -7,7 +7,6 @@ set -e
 
 PKG="petname"
 
-[ -d .bzr/ ] && bzr revert ${PKG}.go || true
 for f in adverbs adjectives names; do
 	rm -f "$f".txt.list
 	printf "	$f = [...]string{" > "$f".txt.list
