@@ -67,16 +67,25 @@ func Name() string {
 // If two words are requested, a Adjective() and a Name() are returned.
 // If three or more words are requested, a variable number of Adverb() and a Adjective and a Name() is returned.
 // The separator can be any character, string, or the empty string.
-func Generate(words int, separator string) string {
-	if words == 1 {
+func Generate(wordCount int, separator string) string {
+	switch wordCount {
+	case 1:
 		return Name()
-	} else if words == 2 {
+	case 2:
 		return Adjective() + separator + Name()
+	case 3:
+		// Potentially common cases have shortcut implementations to
+		// reduce allocations and CPU usage, even though default: would handle
+		// them correctly.
+		return Adverb() + separator + Adjective() + separator + Name()
+	case 4:
+		return Adverb() + separator + Adverb() + separator + Adjective() + separator + Name()
+	default:
+		words := make([]string, 0, wordCount)
+		for i := 0; i < wordCount-2; i++ {
+			words = append(words, Adverb())
+		}
+
+		return strings.Join(append(words, Adjective(), Name()), separator)
 	}
-	var petname []string
-	for i := 0; i < words-2; i++ {
-		petname = append(petname, Adverb())
-	}
-	petname = append(petname, Adjective(), Name())
-	return strings.Join(petname, separator)
 }
