@@ -94,13 +94,15 @@ var (
         separator = flag.String("separator", "-", "The separator between words in the pet name")
 )
 
-func init() {
-        rand.Seed(time.Now().UTC().UnixNano())
-}
-
 func main() {
         flag.Parse()
-        rand.Seed(time.Now().UnixNano())
+
+        // To have a predictable series of petnames. (This is the default)
+        petname.Seed(1)
+        
+        // To have an unpredictable series of petnames.
+        petname.NonDeterministicMode()
+
         fmt.Println(petname.Generate(*words, *separator))
 }
 ```

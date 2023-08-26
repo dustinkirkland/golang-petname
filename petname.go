@@ -41,24 +41,36 @@ var (
 
 // End word lists
 
-// Call this function once before using any other to get real random results
+var localRand *rand.Rand = rand.New(rand.NewSource(1))
+
+// NonDeterministicMode configures the local random generator used internally
+// to provide non deterministic results, instead of a pre-defined order that is
+// reproducible even after a process restart. If you wish to specify a custom
+// contant, call [Seed(int64)].
 func NonDeterministicMode() {
-	rand.Seed(time.Now().UnixNano())
+	localRand.Seed(time.Now().UnixNano())
+}
+
+// Seed configures the local random generator, allowing you to specify a
+// constant for reproducible "randomness" or provide a custom value for
+// "true" randomness.
+func Seed(seed int64) {
+	localRand.Seed(seed)
 }
 
 // Adverb returns a random adverb from a list of petname adverbs.
 func Adverb() string {
-	return adverbs[rand.Intn(len(adverbs))]
+	return adverbs[localRand.Intn(len(adverbs))]
 }
 
 // Adjective returns a random adjective from a list of petname adjectives.
 func Adjective() string {
-	return adjectives[rand.Intn(len(adjectives))]
+	return adjectives[localRand.Intn(len(adjectives))]
 }
 
 // Name returns a random name from a list of petname names.
 func Name() string {
-	return names[rand.Intn(len(names))]
+	return names[localRand.Intn(len(names))]
 }
 
 // Generate generates and returns a random pet name.
