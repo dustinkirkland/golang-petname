@@ -13,12 +13,14 @@ golang-petname (2.11) unreleased; urgency=medium
     - updated wordlists to match upstream
   * debian/control, debian/copyright:
     - updated to relocate source from Launchpad to github
+  * go.mod:
+    - added go mod file for apk
 
   [ Edward Betts ]
   * petname.go:
     - fix typo
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 26 Jun 2023 17:47:24 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Wed, 27 Sep 2023 15:44:27 -0500
 
 golang-petname (2.10-0ubuntu1) eoan; urgency=medium
 
