@@ -15,12 +15,13 @@ golang-petname (2.11) unreleased; urgency=medium
     - updated to relocate source from Launchpad to github
   * go.mod:
     - added go mod file for apk
+    - set go version to 1.20 per issue #18
 
   [ Edward Betts ]
   * petname.go:
     - fix typo
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Wed, 27 Sep 2023 15:44:27 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 02 Oct 2023 11:13:42 -0500
 
 golang-petname (2.10-0ubuntu1) eoan; urgency=medium
 
