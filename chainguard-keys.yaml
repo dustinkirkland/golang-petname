@@ -1,6 +1,6 @@
 package:
   name: chainguard-keys
-  version: 1
+  version: 0
   epoch: 5
   description: "Chainguard public keys"
   copyright:
