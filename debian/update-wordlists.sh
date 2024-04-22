@@ -10,7 +10,7 @@ PKG="petname"
 for f in adverbs adjectives names; do
 	rm -f "$f".txt.list
 	printf "	$f = [...]string{" > "$f".txt.list
-	for w in $(cat /usr/share/petname/"$f".txt); do
+	for w in $(wget -q -O- https://raw.githubusercontent.com/dustinkirkland/petname/master/usr/share/petname/small/${f}.txt); do
 		printf '"%s", ' "$w" >> "$f".txt.list
 	done
 	sed -i -e "s/, $/}\n/" "$f".txt.list
@@ -22,4 +22,4 @@ grep -A 1000 "^// End word lists" ${PKG}.go > below
 cat above *.txt.list below > ${PKG}.go
 go fmt ${PKG}.go
 rm -f *.txt.list above below
-cat /usr/share/doc/petname/README.md > README.md
+wget -q -O- https://raw.githubusercontent.com/dustinkirkland/petname/master/README.md > README.md

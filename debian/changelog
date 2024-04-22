@@ -16,12 +16,17 @@ golang-petname (2.11) unreleased; urgency=medium
   * go.mod:
     - added go mod file for apk
     - set go version to 1.20 per issue #18
+  * debian/update-wordlists.sh:
+    - fetch wordlists from github, rather than as installed on localhost
+      as a maintainer script
+  * petname.go:
+    - remove a couple of animal names
 
   [ Edward Betts ]
   * petname.go:
     - fix typo
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 02 Oct 2023 11:13:42 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 22 Apr 2024 10:40:48 -0500
 
 golang-petname (2.10-0ubuntu1) eoan; urgency=medium
 
