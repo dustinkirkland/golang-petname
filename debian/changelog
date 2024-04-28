@@ -1,4 +1,10 @@
-golang-petname (2.11) unreleased; urgency=medium
+golang-petname (2.12) unreleased; urgency=medium
+
+  * UNRELEASED
+
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Sun, 28 Apr 2024 14:43:47 -0500
+
+golang-petname (2.11-0ubuntu1) experimental; urgency=medium
 
   [ Romain Verduci ]
   * petname.go:
@@ -26,7 +32,7 @@ golang-petname (2.11) unreleased; urgency=medium
   * petname.go:
     - fix typo
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Mon, 22 Apr 2024 10:40:48 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Sun, 28 Apr 2024 14:43:20 -0500
 
 golang-petname (2.10-0ubuntu1) eoan; urgency=medium
 
