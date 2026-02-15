@@ -41,42 +41,98 @@ var (
 
 // End word lists
 
+// Generator generates random petnames using a specific random source.
+// This allows for deterministic generation (e.g., for testing) and
+// thread-safe concurrent use with separate random sources.
+type Generator struct {
+	rnd *rand.Rand
+}
+
+// New creates a new Generator with the specified random source.
+// If rnd is nil, the global math/rand functions are used (same as package-level functions).
+// For deterministic or concurrent use, pass rand.New(rand.NewSource(seed)).
+func New(rnd *rand.Rand) *Generator {
+	return &Generator{rnd: rnd}
+}
+
+// Adverb returns a random adverb from the generator's random source.
+func (g *Generator) Adverb() string {
+	if g.rnd == nil {
+		return adverbs[rand.Intn(len(adverbs))]
+	}
+	return adverbs[g.rnd.Intn(len(adverbs))]
+}
+
+// Adjective returns a random adjective from the generator's random source.
+func (g *Generator) Adjective() string {
+	if g.rnd == nil {
+		return adjectives[rand.Intn(len(adjectives))]
+	}
+	return adjectives[g.rnd.Intn(len(adjectives))]
+}
+
+// Name returns a random name from the generator's random source.
+func (g *Generator) Name() string {
+	if g.rnd == nil {
+		return names[rand.Intn(len(names))]
+	}
+	return names[g.rnd.Intn(len(names))]
+}
+
+// Generate generates a random pet name with the specified number of words and separator.
+// If a single word is requested, simply a Name() is returned.
+// If two words are requested, an Adjective() and a Name() are returned.
+// If three or more words are requested, a variable number of Adverb()s, an Adjective(), and a Name() are returned.
+// The separator can be any character, string, or the empty string.
+func (g *Generator) Generate(words int, separator string) string {
+	if words == 1 {
+		return g.Name()
+	} else if words == 2 {
+		return g.Adjective() + separator + g.Name()
+	}
+	var petname []string
+	for i := 0; i < words-2; i++ {
+		petname = append(petname, g.Adverb())
+	}
+	petname = append(petname, g.Adjective(), g.Name())
+	return strings.Join(petname, separator)
+}
+
+// defaultGenerator is used by package-level functions for backward compatibility.
+var defaultGenerator = New(nil)
+
 // Call this function once before using any other to get real random results
 func NonDeterministicMode() {
 	rand.Seed(time.Now().UnixNano())
 }
 
 // Adverb returns a random adverb from a list of petname adverbs.
+// It uses the global random source (automatically seeded in Go 1.20+).
 func Adverb() string {
-	return adverbs[rand.Intn(len(adverbs))]
+	return defaultGenerator.Adverb()
 }
 
 // Adjective returns a random adjective from a list of petname adjectives.
+// It uses the global random source (automatically seeded in Go 1.20+).
 func Adjective() string {
-	return adjectives[rand.Intn(len(adjectives))]
+	return defaultGenerator.Adjective()
 }
 
 // Name returns a random name from a list of petname names.
+// It uses the global random source (automatically seeded in Go 1.20+).
 func Name() string {
-	return names[rand.Intn(len(names))]
+	return defaultGenerator.Name()
 }
 
 // Generate generates and returns a random pet name.
-// It takes two parameters:  the number of words in the name, and a separator token.
+// It takes two parameters: the number of words in the name, and a separator token.
 // If a single word is requested, simply a Name() is returned.
-// If two words are requested, a Adjective() and a Name() are returned.
-// If three or more words are requested, a variable number of Adverb() and a Adjective and a Name() is returned.
+// If two words are requested, an Adjective() and a Name() are returned.
+// If three or more words are requested, a variable number of Adverb()s, an Adjective(), and a Name() are returned.
 // The separator can be any character, string, or the empty string.
+// It uses the global random source (automatically seeded in Go 1.20+).
+//
+// For deterministic or concurrent use, create a Generator with New() instead.
 func Generate(words int, separator string) string {
-	if words == 1 {
-		return Name()
-	} else if words == 2 {
-		return Adjective() + separator + Name()
-	}
-	var petname []string
-	for i := 0; i < words-2; i++ {
-		petname = append(petname, Adverb())
-	}
-	petname = append(petname, Adjective(), Name())
-	return strings.Join(petname, separator)
+	return defaultGenerator.Generate(words, separator)
 }
