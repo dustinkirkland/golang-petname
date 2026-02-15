@@ -1,4 +1,4 @@
-golang-petname (2.12) unreleased; urgency=medium
+golang-petname (2.12) noble; urgency=medium
 
   * petname.go:
     - synced wordlists with petname 2.10 (removed peacock, cockatoo, woodcock)
@@ -14,6 +14,9 @@ golang-petname (2.12) unreleased; urgency=medium
   * README.md:
     - updated examples to remove deprecated rand.Seed() calls
     - added note about Go 1.20+ automatic seeding
+  * cmd/petname/main.go:
+    - removed deprecated rand.Seed() calls for Go 1.20+ compatibility
+    - removed unnecessary time and math/rand imports
   * Closed issues:
     - #4: init() moved to CLI (confirmed fixed)
     - #7: Docker image available (documented)
