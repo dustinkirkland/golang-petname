@@ -1,8 +1,29 @@
 golang-petname (2.12) unreleased; urgency=medium
 
-  * UNRELEASED
+  * petname.go:
+    - synced wordlists with petname 2.10 (removed peacock, cockatoo, woodcock)
+    - deprecated NonDeterministicMode() for Go 1.20+ auto-seeding
+    - added Generator API for custom random sources
+    - maintained 100% backward compatibility
+  * petname_test.go:
+    - added comprehensive test suite (95.8% coverage)
+    - added tests for backward compatibility
+    - added tests for deterministic behavior and concurrency
+  * example_test.go:
+    - added usage examples for new Generator API
+  * README.md:
+    - updated examples to remove deprecated rand.Seed() calls
+    - added note about Go 1.20+ automatic seeding
+  * Closed issues:
+    - #4: init() moved to CLI (confirmed fixed)
+    - #7: Docker image available (documented)
+    - #8: fork licensing resolved
+    - #10: random generation works by default (Go 1.20+)
+    - #15: updated for Go 1.20+ auto-seeding
+    - #19: offensive names removed
+    - #20: Generator API for custom rand sources
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Sun, 28 Apr 2024 14:43:47 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Fri, 14 Feb 2026 21:30:00 -0600
 
 golang-petname (2.11-0ubuntu1) experimental; urgency=medium
 
