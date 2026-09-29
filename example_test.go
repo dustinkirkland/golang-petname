@@ -30,13 +30,15 @@ func ExampleNew_deterministic() {
 	// mature-zebra
 }
 
-// Example of using the new Generator API for concurrent use
+// Example of using the new Generator API for concurrent use.
+//
+// A single Generator is NOT safe for concurrent use — give each goroutine
+// its own Generator (and its own rand.Rand), as done here.
 func ExampleNew_concurrent() {
-	// Each goroutine can have its own generator for thread-safe concurrent use
 	gen1 := petname.New(rand.New(rand.NewSource(1)))
 	gen2 := petname.New(rand.New(rand.NewSource(2)))
 
-	// These can be safely used concurrently
+	// Each generator is only ever used by the goroutine that owns it.
 	name1 := gen1.Generate(2, "-")
 	name2 := gen2.Generate(2, "-")
 

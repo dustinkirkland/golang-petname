@@ -41,15 +41,20 @@ var (
 // End word lists
 
 // Generator generates random petnames using a specific random source.
-// This allows for deterministic generation (e.g., for testing) and
-// thread-safe concurrent use with separate random sources.
+// This allows for deterministic generation (e.g., for testing).
+//
+// A Generator is not safe for concurrent use by multiple goroutines: its
+// *rand.Rand is unsynchronized. For concurrent generation, create a
+// separate Generator (each with its own rand.Rand) per goroutine — see
+// ExampleNew_concurrent.
 type Generator struct {
 	rnd *rand.Rand
 }
 
 // New creates a new Generator with the specified random source.
-// If rnd is nil, the global math/rand functions are used (same as package-level functions).
-// For deterministic or concurrent use, pass rand.New(rand.NewSource(seed)).
+// If rnd is nil, the global math/rand functions are used (same as package-level functions),
+// which are safe for concurrent use.
+// For deterministic generation, pass rand.New(rand.NewSource(seed)).
 func New(rnd *rand.Rand) *Generator {
 	return &Generator{rnd: rnd}
 }
@@ -135,9 +140,11 @@ func Name() string {
 // If two words are requested, an Adjective() and a Name() are returned.
 // If three or more words are requested, a variable number of Adverb()s, an Adjective(), and a Name() are returned.
 // The separator can be any character, string, or the empty string.
-// It uses the global random source (automatically seeded in Go 1.20+).
+// It uses the global random source (automatically seeded in Go 1.20+),
+// which is already safe for concurrent use.
 //
-// For deterministic or concurrent use, create a Generator with New() instead.
+// For deterministic use, create a Generator with New() instead — give each
+// goroutine its own Generator if you need concurrent deterministic generation.
 func Generate(words int, separator string) string {
 	return defaultGenerator.Generate(words, separator)
 }
