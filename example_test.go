@@ -25,9 +25,9 @@ func ExampleNew_deterministic() {
 	fmt.Println(gen.Generate(2, "-"))
 	fmt.Println(gen.Generate(2, "-"))
 	// Output:
-	// guiding-dodo
-	// relieved-bass
-	// mature-zebra
+	// sought-mudfish
+	// accurate-badger
+	// full-racer
 }
 
 // Example of using the new Generator API for concurrent use.
@@ -45,8 +45,8 @@ func ExampleNew_concurrent() {
 	fmt.Println(name1)
 	fmt.Println(name2)
 	// Output:
-	// touched-shark
-	// relaxing-muskox
+	// desired-lynx
+	// settled-wolf
 }
 
 // Example of generating individual words with deterministic behavior
@@ -57,7 +57,7 @@ func ExampleGenerator_Adjective() {
 	fmt.Println(gen.Adverb())
 	fmt.Println(gen.Name())
 	// Output:
-	// skilled
+	// real
 	// apparently
-	// prawn
+	// buzzard
 }
