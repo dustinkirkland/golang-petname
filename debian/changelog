@@ -1,8 +1,10 @@
-golang-petname (2.13) UNRELEASED; urgency=medium
+golang-petname (2.13) noble; urgency=medium
 
   * Open development for 2.13.
+  * Sync word list from petname (remove 'intimate', 'man')
+  * Fix misleading concurrency-safety claims in Generator docs (#24)
 
- -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 29 Sep 2026 05:52:24 -0500
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Tue, 29 Sep 2026 06:12:46 -0500
 
 golang-petname (2.12) noble; urgency=medium
 
