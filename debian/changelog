@@ -1,3 +1,9 @@
+golang-petname (2.15) UNRELEASED; urgency=medium
+
+  * Open development for 2.15.
+
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Fri, 16 Oct 2026 08:04:56 -0500
+
 golang-petname (2.14) noble; urgency=medium
 
   * Open development for 2.14.
